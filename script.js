@@ -52,4 +52,5 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.score').innerText = score;
   document.querySelector('.number').innerHTML = '?';
   document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.message').textContent = 'Start guessing...';
 });
