@@ -3,7 +3,7 @@
 let score = 20;
 let highScore = 0;
 let secretNumber = Math.floor(Math.random() * 20 + 1);
-console.log(secretNumber);
+
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -47,7 +47,6 @@ document.querySelector('.check').addEventListener('click', function () {
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.floor(Math.random() * 20 + 1);
-  console.log(secretNumber);
   document.body.style.backgroundColor = '#222222';
   document.querySelector('.guess').value = '';
   document.querySelector('.score').innerText = score;
